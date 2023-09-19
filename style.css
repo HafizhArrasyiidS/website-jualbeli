@@ -1,0 +1,275 @@
+:root
+{
+    --blue : #2C2546;
+    --dark-blue : #202227;
+    --green : #00EB09;
+    --white : #fff;
+    --black : #222327;
+    --silver : #7A7C85;
+    --coklat : #DAA14B;
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    text-decoration: none ;
+    box-sizing: border-box;
+    font-family: 'Tahoma';
+}
+
+
+body
+{
+    background-color: var(--dark-blue);
+    color: var(--white);
+
+}
+
+header
+{
+align-items: center;
+position: fixed;
+width: 100%;
+top: 0;
+font-weight: bold;
+font-size: 15pt;
+justify-content: start;
+text-align: center;
+background-color: var(--dark-blue);
+box-shadow: 10px 10px 10px 0px rgba(20, 20, 20, 0.75);
+    -webkit-box-shadow: 10px 10px 10px 0px rgba(20, 20, 20, 0.75);
+    -moz-box-shadow: 10px 10px 10px 0px rgba(20, 20, 20, 0.75);
+    position:sticky;
+    top: 0;  
+    display: flex;
+    height: 10vh;
+}
+
+.title
+{
+    color: var(--white);
+    display: flex;
+    
+}
+
+.search 
+{
+text-align: center;
+margin-top: 30px;
+}
+
+.input-search
+{
+    width: 25%;
+    border: none;
+    border-radius: 10px 0 0 0;
+    padding: 2px;
+}
+
+.input-submit
+{
+    margin-left: -1%;
+    border: none;
+    border-radius: 0 0 10px 0;
+    padding: 2px;
+    background-color: var(--coklat);
+    color: var(--white);
+    width: 5%;
+}
+
+.slider
+{
+    margin-top: -10%;
+    display: block;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    width: 60%;
+}
+
+.slider h4
+{
+    margin-top: 20%;
+}
+
+.slides
+{
+    display: flex;
+    width: 50rem;
+    overflow: hidden;
+    margin-bottom: 50px;
+}
+
+.slides img 
+{
+    border-radius: 10px;
+}
+
+.slide
+{
+    width: 50rem;
+    transition: .5s;
+}
+
+.choose_1:checked ~ .slides > .s1
+{
+    margin-left: -0rem;
+}
+
+.choose_2:checked ~ .slides > .s1
+{
+    margin-left: -50rem;
+}
+
+.overlay 
+{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(12, 12, 12, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.overlay:target 
+{
+    visibility: visible;
+    opacity: 1;
+}
+
+.popup 
+{
+    margin: 70px auto;
+    padding: 20px;
+    background: var(--dark-blue);
+    border-radius: 5px;
+    width: 30%;
+    position: relative;
+    transition: all 5s ease-in-out;
+}
+  
+.popup h2 {
+    margin-top: 0;
+    color: var(--white);
+    font-family: Tahoma, Arial, sans-serif;
+}
+
+.popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+
+.popup .close:hover 
+{
+    color: var(--coklat);
+}
+
+.content 
+{
+    max-height: 30%;
+    width: 50%;
+}
+
+.pesan
+{
+    color: var(--dark-blue);
+    border-radius: 10px;
+}
+
+.judul-produk
+{
+    color: var(--white);
+    margin-bottom: 20%;
+}
+
+.topup
+{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    margin-left: 3%;
+}
+
+.harga
+{
+    color: var(--coklat);
+}
+
+.title-p
+{
+    margin-left: 60px;
+}
+
+.topup img
+{
+    border-radius: 10%;
+}
+
+.isi 
+{
+    width: 43%;
+    margin: 55px 0 ;
+    font-family: 'Courier New', Courier, monospace;
+    margin-left: 4%;
+}
+
+.cr 
+{
+    margin: 15px 0;
+    text-align: center;
+}
+
+.gb 
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.link a
+{
+    color: var(--white);
+}
+
+.link a:hover
+{
+    color: var(--coklat);
+}
+
+.pesan
+{
+    background-color: var(--coklat);
+    padding: 3%;
+    border-radius: 10px;
+}
+
+.pesan:hover
+{
+    background-color: var(--white);
+    
+}
+
+.nomor
+{
+    color: var(--coklat);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.sosmed
+{
+    margin-left:95%;
+    margin: 0%;
+    color: var(--white);
+}
+
+.tt
+{
+    border-radius: 5px;
+}
